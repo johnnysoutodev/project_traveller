@@ -43,13 +43,12 @@ nav a{
 
 .container{
     display: flex;
-    justify-content: flex-start; 
-    
+    max-width: 100%;  
+    justify-content: flex-start;     
 }
 
 .box{
     align-items: flex-start;
-    max-width: 50%;  
     text-align: center;  
       
 }
@@ -66,15 +65,9 @@ nav a{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .box_3{
     background-image: url(../img/pexels-photo-247823.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-ul{
-    
-}
-.container-fluid{
-
 }
