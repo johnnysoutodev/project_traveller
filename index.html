@@ -7,29 +7,58 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     
     <title>Projeto Traveller</title>
 </head>
+
 <body>
     <header>
         <div class="cabecalho">
             <h1>Projeto Traveller</h1>
+        </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Página Inicial</a></li>
                     <li><a href="#">Sobre Nós</a></li>
                     <li><a href="#"><input type="button" name="login" value="Login"></a></li>
                 </ul>
-                <div class="header__p">
-                    <p> Para onde será sua próxima viagem?</p>
-                <input type="search">
-                </div>
             </nav>
-        </div>
-    </header>
-
-    <main>
-
+            <section class="pesquisa">
+                <p> Para onde será sua próxima viagem?</p>
+                <input type="search" placeholder="">
+                <button type="submit"><i class="fas fa-search"></i></button>
+        </section>
+        </header>          
+<!-- pesquisa -->
+<main>
+    
+<!-- pesquisa -->
+    <section class="container">
+            <div class="box_1">
+                <p>Novas politicas para viajar com segurança durante a pandemia</p>
+                <p><input type="button" value="Saiba mais"></p>
+            </div>
+            <div class="box_2">
+                <p>Utilize nosso cupom e ganhe 40% de desconto na sua hospedagem</p>
+                <p><input type="button" value="Pegar cupom"></p>
+                </div>
+            <div class="box_3">
+                <p>As melhores ofertas para intercâmbios no 2º semestre de 2021</p>
+                <p><input type="button" value="Confira agora"></p>
+            </div>
+    </section>
+    <section class="container-fluid">
+            <h2>Destinos populares</h2>
+            <ul>
+                <li>Orlando<input type="button" value="Ver dicas"></li>
+                <li>Paris<input type="button" value="Ver dicas"></li>
+                <li>Toronto<input type="button" value="Ver dicas"></li>
+                <li>Itália<input type="button" value="Ver dicas"></li>
+                <li>Maldivas<button type="button" class="btn btn-outline-dark">Ver dicas</button></li>
+            </ul>
+    </section>
 
     </main>
     
