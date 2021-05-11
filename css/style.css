@@ -1,3 +1,73 @@
-body {
-    padding-top: 72px;
+/* RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+/* GLOBAL */
+
+/* MAIN */
+
+main {
+    width: 100vw;
+    background: #f9f9f9;
+}
+
+#pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 90vw;
+    margin: 0 auto;
+    background: yellow;
+    height: 70vh;
+    width: 90vw;
+    margin: 0 auto;
+    background: blue;
+}
+
+#anuncio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    width: 90vw;
+    margin: 0 auto;
+    background: yellow;
+}
+
+.box {
+    height: 70%;
+    width: 32%;
+    border: none;
+    border-radius: 5px;
+    background: url(../img/pexels-photo-3601425.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.white-b
+
+.conteudo-anuncio {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: rgba(99, 161, 255,0.8)
+}
+
+#populares {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    width: 90vw;
+    margin: 0 auto;
+    background: red;
+}
+
+/* FOOTER */
