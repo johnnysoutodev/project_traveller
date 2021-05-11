@@ -4,103 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Projeto Traveller</title>
 </head>
 <body>
-    
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <header>
-        <a class="sr-only sr-only-focusable d-none" href="#pesquisa">Pular para o conteúdo principal</a>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-3 shadow">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Projeto Traveller</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Página incial</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="./pages/sobre.html">Sobre nós</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="btn btn-primary" href="#" tabindex="-1" aria-disabled="true">Login</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+        <nav>
+
+        </nav>
     </header>
-    <main class="bg-light">
-        <section class="container" id="pesquisa">
-            <h1 class="text-center h2">Para onde será sua próxima viagem?</h1>
-            <div class="row">
-                <form class="d-flex col-6">
-                    <input class="form-control me-2" type="search" placeholder="Escreva aqui o país, estado ou cidade de destino" aria-label="Search">
-                    <button class="btn btn-primary" type="submit">Pesquisar</button>
+    <main>
+        <section id="pesquisa">
+            <div class="conteudo">
+                <h1>Para onde será sua próxima viagem?</h1>
+                <form action="#">
+                    <input class="btn-pesquisa" type="text" placeholder="Escreva o país, estado ou cidade de destino">
+                    <button></button>
                 </form>
             </div>
         </section>
-        <section class="container" id="anuncios">
-            <div class="row d-flex justify-content-between">
-                <div class="col-3 card text-white p-0" style="height: 100px;">
-                    <img src="./img/pexels-photo-2362002.jpg" class="card-img" alt="Disney">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Novas políticas para viajar com segurança durante a pandemia</h5>
-                        <a href="#" class="btn btn-primary mt-4 px-3">Saiba mais</a>
-                    </div>
+        <section id="anuncio">
+            <div class="box">
+                <div class="box-content">
+                    <h3>Novas politicas para viajar com segurança durante a pandemia</h3>
+                    <a href="#" class="btn-white">Saiba mais</a>
                 </div>
-                <div class="col-3 card text-white p-0">
-                    <img src="./img/pexels-photo-2362002.jpg" class="card-img " alt="Disney">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Utilize nosso cupom e ganhe 40% de desconto na sua hospedagem</h5>
-                        <a href="#" class="btn btn-primary mt-4 px-3">Pegar cupom</a>
-                    </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h3>Utilize nosso cupom e ganhe 40% de desconto na sua hospedagem</h3>
+                    <a href="#" class="btn-white">Pegar cupom</a>
                 </div>
-                <div class="col-3 card text-white p-0">
-                    <img src="./img/pexels-photo-2362002.jpg" class="card-img " alt="Disney">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">As melhores ofertas para intercâmbios no 2º semestre de 2021</h5>
-                        <a href="#" class="btn btn-primary mt-4 px-3">Conferir agora</a>
-                    </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h3>As melhores ofertas para intercâmbios no 
+                        2º semestre de 2021</h3>
+                    <a href="#" class="btn-white">Confira agora</a>
                 </div>
             </div>
         </section>
-        <section class="container" id="populares">
-            <div class="row d-flex justify-content-between">
-                <div class="col-2 bg-dark">
-                    <h3 class="text-white">Orlando</h3>
-                    <a href="./pages/orlando.html" class="btn btn-outline-light">Ver dicas</a>
+        
+        <section id="populares">
+            <!-- <h2> Destinos populares</h2>--->
+            <div class="pop">
+                <div class="conteudo-popular">
+                    <h3>Orlando</h3>
+                    <a href="#" class="btn-outline">Ver dicas</a>
                 </div>
-                <div class="col-2 bg-dark">
-                    <h3 class="text-white">Paris</h3>
-                    <a href="./pages/paris.html" class="btn btn-outline-light">Ver dicas</a>
+            </div>
+            <div class="pop">
+                <div class="conteudo-popular">
+                    <h3>Paris</h3>
+                    <a href="#" class="btn-outline">Ver dicas</a>
                 </div>
-                <div class="col-2 bg-dark">
-                    <h3 class="text-white">Toronto</h3>
-                    <a href="./pages/toronto.html" class="btn btn-outline-light">Ver dicas</a>
+            </div>
+            <div class="pop">
+                <div class="conteudo-popular">
+                    <h3>Toronto</h3>
+                    <a href="#" class="btn-outline">Ver dicas</a>
                 </div>
-                <div class="col-2 bg-dark">
-                    <h3 class="text-white">Itália</h3>
-                    <a href="./pages/italia.html" class="btn btn-outline-light">Ver dicas</a>
+            </div>
+            <div class="pop">
+                <div class="conteudo-popular">
+                    <h3>Itália</h3>
+                    <a href="#" class="btn-outline">Ver dicas</a>
                 </div>
-                <div class="col-2 bg-dark">
-                    <h3 class="text-white">Maldivas</h3>
-                    <a href="./pages/maldivas.html" class="btn btn-outline-light">Ver dicas</a>
+            </div>
+            <div class="pop">
+                <div class="conteudo-popular">
+                    <h3>Maldivas</h3>
+                    <a href="#" class="btn-outline">Ver dicas</a>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-dark">
+   
+    <footer>
 
     </footer>
-
-    <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
-    <script type="text/javascript" src="./js/popper.min.js"></script>
-    <script type="text/javascript" src="./js/bootstrap.js"></script>
-    <script type="text/javascript" src="./js/app.js"></script>
 </body>
 </html>

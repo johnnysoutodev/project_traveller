@@ -1,3 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* RESET */
+
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
 body {
-    padding-top: 72px;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* GLOBAL */
+
+/* MAIN */
+
+main {
+    width: 100vw;
+    background: #f9f9f9;
+}
+
+#pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 90vw;
+    margin: 0 auto;
+    background: blue;
+}
+
+.btn-pesquisa {
+    height: 50px;
+    width: 670px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    overflow: hidden;
+}
+
+input{
+    color: #3a3a3a;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+input::placeholder {
+    color: #3a3a3a;
+    font-size: 16px;
+}
+
+#anuncio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.box {
+    height: 70%;
+    width: 32%;
+    border: none;
+    border-radius: 5px;
+}
+
+.box:nth-child(1) {
+    background-image: url(../img/pexels-photo-3962258.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.box:nth-child(2) {
+    background-image: url(../img/pexels-photo-3962258.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.box:nth-child(3) {
+    background-image: url(../img/pexels-photo-3962258.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    padding: 45px 20px;
+    border-radius: 5px;
+    background: rgba(99, 161, 255,0.8)
+}
+
+.btn-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 174px;
+    height: 40px;
+    font-weight: 500;
+    color: #63A1FF;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#populares {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 51vh;
+    width: 90vw;
+    margin: 0 auto;
+    font-size: 1em;
+    position: relative;
+}
+
+.pop { 
+   width: 200px; 
+   height: 280px; 
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: #fff;
+    
+}
+.pop:nth-child(1) {
+    background-image: url(../img/pexels-photo-2362002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pop:nth-child(2) {
+    background-image: url(../img/pexels-photo-3283109.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pop:nth-child(3) {
+    background-image: url(../img/pexels-photo-374870.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pop:nth-child(4) {
+    background-image: url(../img/pexels-khalid-ait-sayh-1701595.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pop:nth-child(5) {
+    background-image: url(../img/pexels-photo-3601425.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conteudo-popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.btn-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    font-weight: 500;
+    color: #fff;
+    border: solid;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #0000;
 }
