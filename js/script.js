@@ -1,4 +1,8 @@
-window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("esticar", window.scrollY > 3);
-})
+$(document).ready(function(){    
+    $(window).on('scroll', function(){
+        if($(window).scrollTop()){
+            $(#menu).addClass('ativo');
+        }else{
+            $(#menu).removeClass('ativo');
+        }
+    })

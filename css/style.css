@@ -44,8 +44,6 @@ ul {
   list-style: none;
 }
 
-/* GLOBAL */
-
 /* MAIN */
 
 header {
@@ -56,13 +54,8 @@ header {
     z-index: 3;
 }
 
-header .sticky {
-    position: fixed;
-    height: 80px;
-    width: 100vw;
+.ativo {
     background: #fff;
-    overflow: hidden;
-    z-index: 3;
 }
 
 .header-content {
@@ -105,7 +98,7 @@ main {
     background: url(../img/catedral.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -50;
+    margin-bottom: 80vh;
 }
 
 .opacity {
@@ -237,80 +230,106 @@ input::placeholder {
 
 #populares {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    height: 51vh;
+    height: 50vh;
     width: 90vw;
     margin: 0 auto;
-    font-size: 1em;
-    position: relative;
 }
 
-.pop { 
-   width: 200px; 
-   height: 280px; 
-    align-items: center;
+.pop {
     text-align: center;
-    display: flex;
+    border: none;
+    border-radius: 5px;
+    width: 15%; 
+    height: 80%; 
     color: #fff;
-    
 }
+
 .pop:nth-child(1) {
-    background-image: url(../img/pexels-photo-2362002.jpg);
+    background-image: url(../img/orlando.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .pop:nth-child(2) {
-    background-image: url(../img/pexels-photo-3283109.jpg);
+    background-image: url(../img/paris.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .pop:nth-child(3) {
-    background-image: url(../img/pexels-photo-374870.jpg);
+    background-image: url(../img/Toronto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .pop:nth-child(4) {
-    background-image: url(../img/pexels-khalid-ait-sayh-1701595.jpg);
+    background-image: url(../img/italia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .pop:nth-child(5) {
-    background-image: url(../img/pexels-photo-3601425.jpg);
+    background-image: url(../img/maldivas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .conteudo-popular{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     height: 100%;
     width: 100%;
+    padding-top: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     border-radius: 5px;
-    
+    background-color: rgba(0, 0, 0, 0.6);
 }
+
 .btn-outline {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 160px;
+    width: 100%;
     height: 40px;
     font-weight: 500;
     color: #fff;
-    border: solid;
-    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid;
     border-radius: 5px;
-    margin-bottom: 15px;
 }
 
 /* FOOTER */
-footer{
-    background-color: #0000;
+
+footer {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 80px;
+    background: #2D303A;
 }
-/* FOOTER */
+
+.conteudo-footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) { ... }
+
+@media (min-width: 768px) { ... }
+
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1200px) { ... }
+
+@media (min-width: 1400px) { ... }
