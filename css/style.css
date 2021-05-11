@@ -239,10 +239,78 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50vh;
+    height: 51vh;
     width: 90vw;
     margin: 0 auto;
-    background: red;
+    font-size: 1em;
+    position: relative;
 }
 
+.pop { 
+   width: 200px; 
+   height: 280px; 
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: #fff;
+    
+}
+.pop:nth-child(1) {
+    background-image: url(../img/pexels-photo-2362002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pop:nth-child(2) {
+    background-image: url(../img/pexels-photo-3283109.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pop:nth-child(3) {
+    background-image: url(../img/pexels-photo-374870.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pop:nth-child(4) {
+    background-image: url(../img/pexels-khalid-ait-sayh-1701595.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pop:nth-child(5) {
+    background-image: url(../img/pexels-photo-3601425.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conteudo-popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.btn-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    font-weight: 500;
+    color: #fff;
+    border: solid;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #0000;
+}
 /* FOOTER */
